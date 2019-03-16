@@ -42,7 +42,7 @@ pt-BR:
   started: Iniciado
   on_hold: Em espera
   completed: Terminado
-  called_off: Called Off
+  called_off: Cancelado
   new: Novo
   contacted: Contactado
   converted: Convertido
@@ -70,7 +70,7 @@ pt-BR:
   meeting: Encontro
   money: Dinheiro
   trip: Viagem
-  overdue: Overdue
+  overdue: Atrasado
   due_asap: Assim que possível
   due_today: Hoje
   due_tomorrow: Amanhã
@@ -220,7 +220,7 @@ pt-BR:
 
   # Options.
   #----------------------------------------------------------------------------
-  option_amount*probability: weighted amount
+  option_amount*probability: quantidade ponderada
   activity_options: Exibir atividades em %{models} feitas por %{user} no(s) último(s)
     %{period}.
   all_users: todos os usuários
@@ -230,7 +230,7 @@ pt-BR:
   option_amount: valor
   option_before: antes
   option_brief: resumindo
-  option_closes_on: close date
+  option_closes_on: data de encerramento
   option_company: empresa
   option_created_at: data de criação
   option_ends_on: data de término
@@ -240,7 +240,7 @@ pt-BR:
   option_long: detalhado
   option_name: nome
   option_probability: probabilidade
-  option_rating: rating
+  option_rating: avaliação
   option_revenue: receita atual
   option_starts_on: data de início
   option_target_leads: leads alvo
@@ -383,6 +383,10 @@ pt-BR:
   total_campaigns: Total Campaigns
   was_supposed_to_finish: deveria ter terminado a %{value}
   was_supposed_to_start: deveria ter começado há %{time_ago} atrás em %{start_date}
+  was_supposed_to_start_in: was supposed to start in %{starts_in} on %{start_date}
+  select_a_campaign: Select a campaign
+  # Views -> Contacts.
+  #----------------------------------------------------------------------------
   alt_email_small: Outro
   blog: Website/Blog
   contact: Contato
@@ -390,6 +394,7 @@ pt-BR:
   contacts: Contatos
   contacts_options: Opções de contato
   contacts_small: contatos
+  contact_summary: Contact Summary
   create_contact: Novo contato
   department: Departamento
   department_small: ! '%{value} departamento'
@@ -409,9 +414,21 @@ pt-BR:
   referred_by_small: indicado por
   save_contact: Salvar contato
   twitter: Twitter
+  unassigned: Unassigned
   web_presence: Presença na Web
   web_presence_small: presença na web
   works_at: ! '%{job_title} na %{company}'
+  general_info: General Information
+  show_general_info_small: Show general information for this contact.
+  show_extra_info_small: Show extra information for this contact.
+  tag_details: ! '%{tag} Details'
+  show_tag_info_small: Show %{tag} information for this contact.
+  shared_with_everyone: Shared with everyone
+  title: Title
+  subscriptions: Subscriptions
+
+  # Views -> Leads.
+  #----------------------------------------------------------------------------
   convert: Converter
   convert_lead: Converter lead
   convert_lead_permissions_intro: Permissões de contato vão ser copiados do lead sendo convertido. Você pode mudar as permissões de contato depois.
@@ -434,6 +451,7 @@ pt-BR:
   lead_small: lead
   lead_status_small: situação do lead
   lead_summary: Resumo do Lead
+  lead_statuses: Lead Statuses
   leads: Leads
   leads_options: Opções de Lead
   leads_small: leads
@@ -445,8 +463,13 @@ pt-BR:
   source: Origem
   status: Situação
   total_leads: Total de leads
+  show_status_info_small: Show status information for this lead.
+  show_contact_info_small: Show contact information for this lead.
+  # Views -> Opportunities.
+  #----------------------------------------------------------------------------
   amount: Valor
   close_date: Data de fechar
+  closes_on: Closes on
   closed_ago_on: fechada há %{time_ago} atrás em %{date}
   closes_today: esperado de fechar hoje!
   closing_date: data de fechar é %{value}
@@ -465,6 +488,7 @@ pt-BR:
   opportunities_small: oportunidades
   opportunity: Oportunidade
   opportunity_small: oportunidade
+  opportunity_stages: Opportunity Stages
   opportunity_summary: Oportunidade At a Glance
   opportunity_summary_text: ! '%{amount} com desconto de %{discount} e probabilidade
     de %{probability}'
@@ -475,6 +499,12 @@ pt-BR:
   stage: Fase
   total_opportunities: Total Opportunities
   weighted_amount: Weighted amount
+  # Views -> Tasks.
+  #----------------------------------------------------------------------------
+  task: Task
+  task_small: task
+  tasks: Tasks
+  tasks_small: tasks
   assign_to: Atribuida para
   assigned_tab: Atribuída
   assigned_tasks: Tarefas atribuídas
@@ -524,6 +554,7 @@ pt-BR:
   action_updated: atualziado
   action_viewed: visualizado
   action_won: consuistado
+  activities: Activities
   no_activity_records: Nenhum registro de atividade encontrado.
   recent_activity: Atividade recente
   recent_activity_options: Opções de atividade recente
@@ -533,18 +564,38 @@ pt-BR:
   subject_lead: lead
   subject_opportunity: oportunidade
   subject_task: tarefa
+  subject_user: user
+  tag_list: Tags
+  create_past_participle: Record Creations
+  view_past_participle: Views
+  update_past_participle: Updates
+  destroy_past_participle: Deletions
+  all_events_past_participle: Activities
+  action_create_comment: ! '- &quot;%{comment}&quot;'
+  my_tasks: My Tasks
+  no_task_records: You have no tasks.
+  my_opportunities: My Opportunities
+  no_opportunity_records: You have no opportunities.
+  my_accounts: My Accounts
+  no_account_records: You have no accounts
+  not_showing_hidden_entities: Not showing %{count} hidden %{entity}.
+  # Views -> Common.
+  #----------------------------------------------------------------------------
   add_note: Adicionar nota
   save_note: Salvar nota
   add_note_help: Adicionar nova nota...
+  edit_note: Edit Comment
   added_ago: adicionado(a) há %{value} atrás
   added_by: adicionado(a) há %{time_ago} atrás por %{user}
   back: Voltar
   cancel: Cancelar
   close_form: Fechar formulário
+  comment_intro: You can add comments later.
   confirm_delete: Tem certeza que deseja remover este %{value}?
   copy_permissions: Copiar permissão %{value}
   could_not_find: ! '%{value} não encontrado. Sinta-se livre para'
   could_not_find_matching: Couldn't find %{value} matching
+  create_new: create new
   create_new: cria um(a) novo(a)
   select_existing: selecione existentes
   delete: Remover
@@ -562,14 +613,27 @@ pt-BR:
   permissions: Permissões
   please_retry: favor tente outra consulta.
   recent_items: Itens recentes
+  select_contact: Select Contact
+  select_lead: Select Lead
+  select_task: Select Task
+  select_opportunity: Select Opportunity
   search_assets: Buscar %{value}
   time_ago: há %{value} atrás
   background_info: Informações gerais
   address: Endereço
+  street1: Street 1
+  street2: Street 2
   city: Ciudade
   zipcode: CEP
   state: Membro/Região
   country: Campo
+  select_a_country: Select a Country
+  expand_all: Expand all
+  collapse_all: Collapse all
+  expanded: Expanded
+  collapsed: Collapsed
+  # Views -> Layout.
+  #----------------------------------------------------------------------------
   about: Sobre
   about_dev_group: Grupo de discussão para desenvolvedores
   about_features: Funcionalidades e bugs
@@ -586,20 +650,57 @@ pt-BR:
   logout: Sair
   quick_find: Busca rápida
   welcome: Bem vindo(a)
+  # Advanced search
+  accounts_advanced_search: Accounts Advanced search
+  advanced_search: Advanced search
+  basic_search: Basic search
+  search_results_count:
+    one: Search found %{count} result.
+    other: Search found %{count} results.
+
+  # Views -> Comments.
+  #----------------------------------------------------------------------------
+  comment: Comment
   edit_comment: Editando comentário
   show: Exibir
   update: Atualizar
+  following_users_will_be_notified: The following users will be notified by email
+  notifications_tooltip: Subscribers will receive new comments via email
+  subscribe_via_email: Subscribe via email
+  disable_email_subscriptions: Disable email subscription
+  added_note: added comment %{value}
+  # Views -> Emails.
+  #----------------------------------------------------------------------------
+
+  # Views -> Passwords.
+  #----------------------------------------------------------------------------
   confirm_password_intro: Por favor, digite sua nova senha e então confirme-a.
   password_intro: Por favor, informe seu e-mail, e as instruções para redefinir a
     sua senha serão enviadas a você.
   reset_password: Redefnir senha
   update_password_and_login: Atualizar senha e entrar.
+  # Views -> Admin
+  #----------------------------------------------------------------------------
   back_to_crm: Voltar ao Fat Free CRM
   crm_admin_page: Administração do Fat Free CRM
+  # Views -> Admin -> Groups
+  #----------------------------------------------------------------------------
+  create_group: Create Group
+  save_group: Save Group
+  group_members: members
+  groups: Groups
+  groups_small: groups
+  group_small: group
+
+  # Views -> Admin -> Users
+  #----------------------------------------------------------------------------
+  confirm_group_delete: Are you sure you wish to delete this group? There are %{count}
+    items that still reference it.
   approve: Aprovar
   create_user: Novo usuário
   last_logged_in: last logged in %{value}
   personal_information: Informações Pessoais
+  group_memberships: Group Memberships
   reactivate: Reativar
   save_user: Salvar usuário
   suspend: Suspender
@@ -616,16 +717,61 @@ pt-BR:
   user_suspended_on: suspenso em %{value}
   users: Usuários
   users_small: usuários
-  dropbox_notification_subject: dropbox - E-mail Added - %{subject}
-  dropbox_notification_intro: Adicionado com sucesso o e-mail que você enviou para
-    dropbox
+  # Views -> Versions
+  #----------------------------------------------------------------------------
+  versions: History
+  version:
+    create: ! '%{item} created by %{by}'
+    update: ! '%{item} modified by %{by}'
+    destroy: ! '%{item} destroyed by %{by}'
+    set_html: ! '%{attr} set to %{to}'
+    unset_html: ! '%{attr} unset'
+    change_html: ! '%{attr} changed from %{from} to %{to}'
+    anonymous: anonymous
+  account_contact_id: Account id
+  account_contact_name: Account name
+  user_id: User id
+  created_at: Created at
+  updated_at: Updated at
+  # Export.
+  #----------------------------------------------------------------------------
+  to_xls: Export to Excel
+  to_csv: Export to comma-delimited file format (including deleted records)
+  to_rss: RSS feed
+  to_atom: Atom feed
+  to_perm: Permalink
+
+  # Dropbox.
+  #----------------------------------------------------------------------------
+  dropbox_notification_subject: dropbox - Added email - %{subject}
+  dropbox_notification_intro: Adicionado com sucesso o e-mail que você enviou para dropbox
   dropbox_notification_to: Adicionado a
   subject: Assunto
   body: Corpo
+
+  # Comment Inbox
+  #----------------------------------------------------------------------------
+  comment_notification:
+    intro: ! '%{user_full_name} comentou em %{entity_type}: %{entity_name}'
+    reply_instructions: Responda diretamente a este e-mail para adicionar um novo comentário ou visualize
+      o %{entity} online
+
+  # Lists
+  #----------------------------------------------------------------------------
+  global_lists: Listas globais
+  personal_lists: Minhas listas
+  list: Lista
+  no_saved_lists: Listas não salvas
+  make_current_view_list: Make current view a list
+  list_name_info: Se usar o nome de uma lista existente, você irá sobrescrever
+    com as configurações atuais
+
+  # Pluralizations.
+  #----------------------------------------------------------------------------
   pluralize:
     comment:
-      one: 1 comment
-      other: ! '%{count} comments'
+      one: 1 comentário
+      other: ! '%{count} comentários'
     contact:
       one: 1 contato
       other: ! '%{count} contatos'
@@ -641,11 +787,135 @@ pt-BR:
     login:
       one: 1 login
       other: ! '%{count} logins'
+
+  # Custom date/time formats.
+  #----------------------------------------------------------------------------
   date:
     formats:
+      ddmmyyyy: ! '%d/%m/%Y'
       mmddyyyy: ! '%m/%d/%Y'
       mmdd: ! '%b %e'
       mmddyy: ! '%b %e, %Y'
   time:
     formats:
       mmddhhss: ! '%b %e at %l:%M%p'
+      mmddyyyy_hhmm: ! '%e %b %Y at %l:%M%p'
+
+  # will_paginate translations copied for 'en-US'
+  #----------------------------------------------------------------------------
+  will_paginate:
+    previous_label: ! '&#8592; Anterior'
+    next_label: Próximo &#8594;
+    page_gap: ! '&hellip;'
+    page_entries_info:
+      single_page:
+        zero: Nenhum %{plural} encontrado
+        one: Exibindo 1 %{name}
+        other: Exibindo todos %{count} %{plural}
+      multi_page: Exibindo %{plural} %{from} - %{to} de %{total} no total
+
+  # Views -> Admin -> Custom Fields
+  #----------------------------------------------------------------------------
+  label: Label
+  custom_fields: Custom Fields
+  custom_field_options: Custom Field Options
+  create_field: Create field
+  save_field: Save field
+  create_field_group: Create field group
+  edit_field_group: Edit field group
+  save_field_group: Save field group
+  field_group_empty: There are no fields in this group.
+  select_or_create_tags: Select some tags, or create a new tag by pressing 'enter'.
+  restrict_by_tag: ! 'Restrict by Tag:'
+  restrict_by_tag_info: (Only show fields for %{assets} that are tagged with the following)
+  field_group_tag_restriction: This field group applies to %{assets} tagged with "%{tag}"
+  field_group_unrestricted: This field group applies to all %{assets}
+  field_group_confirm_delete: If a field group is deleted, any fields will be moved
+    to the default field group.
+  msg_cant_delete_field_group: Field Group could not be deleted.
+  admin_fields_info: ! 'Custom fields are displayed in groups.
+    Create a new field group, or add fields to one of the groups below.
+    You can drag and drop fields to change their display order or move them between
+    field groups.'
+  # Views -> Admin -> Tags
+  #----------------------------------------------------------------------------
+  admin_fields_info2: ! 'It is strongly recommended you restart your server after
+    adding or removing any custom field.
+
+'
+  tags: Tags
+  tag_small: tag
+  tagged: Tagged
+  create_tag: Create Tag
+  save_tag: Save Tag
+  field_group_tags: Field Groups shown for this Tag
+
+  # Views -> Admin -> Plugins
+  #----------------------------------------------------------------------------
+  tag_with_taggings_confirm_delete: If this tag is deleted, it will be removed from
+    %{value} records.
+  msg_cant_delete_tag: Couldn't delete '%{value}' since it has associated Field Groups.
+  views:
+    admin:
+      plugins:
+        author: Author
+        version: Version
+        description: Description
+
+  # Simple Form translations
+  #----------------------------------------------------------------------------
+  simple_form:
+    yes: 'Yes'
+    no: 'No'
+    required:
+      text: required
+      mark: ! '*'
+      # You can uncomment the line below if you need to overwrite the whole required html.
+      # When using html, text and mark won't be used.
+      # html: '<abbr title="required">*</abbr>'
+    error_notification:
+      default_message: ! 'Some errors were found, please take a look:'
+
+  # Form field types
+  #----------------------------------------------------------------------------
+  field_types:
+    string:
+      title: Short Answer
+    text:
+      title: Long Answer
+    select:
+      title: Select List
+    multiselect:
+      title: Multi Select
+    radio_buttons:
+      title: Radio Buttons
+    boolean:
+      title: Checkbox
+    check_boxes:
+      title: Checkbox List
+    date:
+      title: Date
+    date_pair:
+      title: Date Pair
+    datetime:
+      title: Date & Time
+    datetime_pair:
+      title: Date & Time Pair
+    email:
+      title: Email Address
+    url:
+      title: URL
+    tel:
+      title: Phone Number
+    decimal:
+      title: Number (Decimal)
+    integer:
+      title: Number (Integer)
+    float:
+      title: Number (Floating Point)
+  pair:
+    start: Start
+    end: End
+    from_to: From %{from} to %{to}
+    from_only: From %{from}
+    to_only: Until %{to}
